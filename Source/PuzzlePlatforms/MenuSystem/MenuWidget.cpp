@@ -13,7 +13,7 @@ void UMenuWidget::Setup()
 	if (!ensure(PlayerController != nullptr)) return;
 
 	FInputModeUIOnly InputModeData;
-	InputModeData.SetWidgetToFocus(this->TakeWidget());
+	//InputModeData.SetWidgetToFocus(TakeWidget());
 	InputModeData.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
 
 	PlayerController->SetInputMode(InputModeData);
